@@ -439,6 +439,83 @@ window.addEventListener('resize', ()=>{
   ctx.setTransform(ratio,0,0,ratio,0,0);
   updateChart();
 })();
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sluta Snusa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #4CAF50;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #4CAF50;
+    }
+
+    .stat {
+      margin: 15px 0;
+      padding: 15px;
+      background: #e9f6eb;
+      border-left: 5px solid #4CAF50;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>Sluta Snusa</header>
+
+<div class="container">
+  <h2>Dina framsteg</h2>
+
+  <div class="stat">
+    Dagar utan snus: <span id="days"></span>
+  </div>
+
+  <div class="stat">
+    Pengar sparade: <span id="money"></span> kr
+  </div>
+
+  <div class="stat">
+    Din nuvarande fas: <span id="stage"></span>
+  </div>
+</div>
+
+<script>
+  // Här kan du lägga in din logik för beräkningar
+  document.getElementById("days").innerText = "0";
+  document.getElementById("money").innerText = "0";
+  document.getElementById("stage").innerText = "Avgiftningsfas";
+</script>
+
+</body>
+</html>
 
 </script>
 </body>
